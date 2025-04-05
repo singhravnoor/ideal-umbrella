@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Digital Revolution</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--dark);
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: var(--gray);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+            height: 200px;
+            object-fit: cover;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item img {
+            width: 100%;
+            border-radius: 8px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .references {
+            background-color: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .purpose-box {
+            background-color: #e0f2fe;
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .active {
+            font-weight: bold;
+            text-decoration: underline !important;
+        }
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1: Home -->
+    <div id="home-page">
+        <header>
+            <h1>The Digital Revolution</h1>
+            <p>How Technology Shapes Our World</p>
+        </header>
+        <nav>
+            <a href="#home-page" class="active">Home</a>
+            <a href="#communication-page">Communication & Education</a>
+            <a href="#future-page">AI & The Future</a>
+        </nav>
+        <div class="container">
+            <div class="card">
+                <h2>What is the Digital Revolution?</h2>
+                <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Digital network connections">
+                <p>The Digital Revolution refers to the shift from mechanical and analogue electronic technology to digital electronics which began in the latter half of the 20th century. This transformation has fundamentally changed how we live, work, and interact with each other (Castells, 2010).</p>
+                
+                <div class="purpose-box">
+                    <h3>Purpose of This Website</h3>
+                    <p>This website handles three main issues of the digital revolution: the principle (this page) of the revolution, its effects on communication and education, and, lastly, future visions on AI and automation. What I would want to do is give a good representation of how digital technology has changed all aspects of our lives.</p>
+                </div>
+            </div>
+            
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Computer chips">
+                    <h3>The Internet</h3>
+                    <p>The foundation of digital connectivity that has transformed global communication and information access (Berners-Lee, 2000).</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Smartphone">
+                    <h3>Mobile Technology</h3>
+                    <p>Smartphones have put powerful computing capabilities in the hands of billions worldwide (West & Mace, 2010).</p>
+                </div>
+            </div>
+            
+            <div class="references">
+                <h3>References</h3>
+                <ol>
+                    <li>Castells, M. (2010). <i>The Rise of the Network Society</i>. Wiley-Blackwell.</li>
+                    <li>Berners-Lee, T. (2000). <i>Weaving the Web</i>. Harper Business.</li>
+                    <li>West, J., & Mace, M. (2010). Browsing as the killer app: Explaining the rapid success of Apple's iPhone. <i>Telecommunications Policy</i>, 34(5-6), 270-286.</li>
+                </ol>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </div>
+
+    <!-- Page 2: Communication & Education -->
+    <div id="communication-page" style="display:none;">
+        <header>
+            <h1>Communication & Education in a Digital World</h1>
+        </header>
+        <nav>
+            <a href="#home-page">Home</a>
+            <a href="#communication-page" class="active">Communication & Education</a>
+            <a href="#future-page">AI & The Future</a>
+        </nav>
+        <div class="container">
+            <div class="card">
+                <h2>Digital Communication</h2>
+                <p>Performed expository for possible worldwide connection, now. Social media, messaging apps, and video calling have changed the way we connect with one another. 
+These platforms are viable methods for an expository appearance for a possible worldwide connection. Social media, messaging apps, and video calling have changed the way we connect with each other.(Boyd, 2014).</p>
+                
+                <h3>Benefits</h3>
+                <ul>
+                    <li>Instant global connectivity</li>
+                    <li>Reduced communication costs</li>
+                    <li>New forms of expression and community building</li>
+                </ul>
+                
+                <h3>Challenges</h3>
+                <ul>
+                    <li>Spread of misinformation (Vosoughi et al., 2018)</li>
+                    <li>Digital addiction and mental health impacts</li>
+                    <li>Cyberbullying and online harassment</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>Education & E-Learning</h2>
+                <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Online learning">
+                <p>The digital revolution has transformed education through platforms like Zoom, Coursera, and Google Classroom, making learning more accessible than ever before (Means et al., 2013).</p>
+                
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Flexible learning schedules</li>
+                    <li>Access to global educational resources</li>
+                    <li>Personalized learning experiences</li>
+                </ul>
+                
+                <h3>Drawbacks</h3>
+                <ul>
+                    <li>Screen fatigue and reduced attention spans</li>
+                    <li>Lack of face-to-face social interaction</li>
+                    <li>Digital divide in access to technology</li>
+                </ul>
+            </div>
+            
+            <div class="references">
+                <h3>References</h3>
+                <ol>
+                    <li>Boyd, d. (2014). <i>It's Complicated: The Social Lives of Networked Teens</i>. Yale University Press.</li>
+                    <li>Vosoughi, S., Roy, D., & Aral, S. (2018). The spread of true and false news online. <i>Science</i>, 359(6380), 1146-1151.</li>
+                    <li>Means, B., Toyama, Y., Murphy, R., Bakia, M., & Jones, K. (2013). <i>Evaluation of Evidence-Based Practices in Online Learning</i>. U.S. Department of Education.</li>
+                </ol>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </div>
+
+    <!-- Page 3: AI & The Future -->
+    <div id="future-page" style="display:none;">
+        <header>
+            <h1>AI, Automation & Ethics</h1>
+            <p>The Future of the Digital Revolution</p>
+        </header>
+        <nav>
+            <a href="#home-page">Home</a>
+            <a href="#communication-page">Communication & Education</a>
+            <a href="#future-page" class="active">AI & The Future</a>
+        </nav>
+        <div class="container">
+            <div class="card">
+                <h2>The Rise of AI & Automation</h2>
+                <p>Artificial Intelligence has come from science fiction to common reality, with uses that extend from chatbots to autonomous vehicles (Russell & Norvig, 2021). Automation is shaping business from manufacturing to health.</p>
+                
+                <div class="grid" style="margin: 1rem 0;">
+                    <div class="grid-item">
+                        <h3>Current Applications</h3>
+                        <ul>
+                            <li>Natural language processing (e.g., ChatGPT)</li>
+                            <li>Computer vision (facial recognition)</li>
+                            <li>Predictive analytics</li>
+                            <li>Industrial robotics</li>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Industry Impact</h3>
+                        <ul>
+                            <li>Manufacturing: 47% automation potential (Manyika et al., 2017)</li>
+                            <li>Healthcare: Diagnostic AI systems</li>
+                            <li>Finance: Algorithmic trading</li>
+                            <li>Transportation: Autonomous vehicles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Ethical Considerations</h2>
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Ethics scale">
+                <p>As AI systems become more powerful, ethical questions about their development and use become increasingly important (Floridi et al., 2018).</p>
+                
+                <h3>Key Issues</h3>
+                <ul>
+                    <li>Accountability for AI decisions</li>
+                    <li>Transparency in algorithms</li>
+                    <li>Data privacy protections</li>
+                    <li>Digital literacy requirements</li>
+                </ul>
+            </div>
+            
+            <div class="references">
+                <h3>References</h3>
+                <ol>
+                    <li>Russell, S., & Norvig, P. (2021). <i>Artificial Intelligence: A Modern Approach</i>. Pearson.</li>
+                    <li>Manyika, J., et al. (2017). Jobs lost, jobs gained: Workforce transitions in a time of automation. McKinsey Global Institute.</li>
+                    <li>Floridi, L., et al. (2018). AI4People—An ethical framework for a good AI society. <i>Minds and Machines</i>, 28(4), 689-707.</li>
+                </ol>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </div>
+
+    <script>
+        // Simple page navigation
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetPage = this.getAttribute('href').substring(1);
+                
+                // Hide all pages
+                document.querySelectorAll('div[id$="-page"]').forEach(page => {
+                    page.style.display = 'none';
+                });
+                
+                // Show selected page
+                document.getElementById(targetPage).style.display = 'block';
+                
+                // Update active link
+                document.querySelectorAll('nav a').forEach(navLink => {
+                    navLink.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+            });
+        });
+    </script>
+</body>
+</html>
